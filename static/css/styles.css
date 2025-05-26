@@ -1,0 +1,40 @@
+* {
+}
+:root {
+}
+body {
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: "Noto Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+}
+.container {
+    display: grid;
+    width: 90%;
+    height: 100vh;
+    grid-template-areas:
+        "navbar"
+        "main"
+        "footer";
+    margin: auto;
+}
+
+.construction {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    max-width: 750px;
+    grid-area: main;
+}
+.construction h1 {
+    font-size: 3.8rem;
+    text-align: center;
+}
+footer {
+    grid-area: footer;
+    max-height: 3rem;
+    margin: auto;
+    padding-bottom: 0.8rem;
+}
