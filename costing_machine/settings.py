@@ -44,7 +44,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     # apps
     "plants.apps.PlantsConfig",
-    "to_do.apps.ToDoConfig",
+    "tasks.apps.TasksConfig",
 ]
 
 MIDDLEWARE = [

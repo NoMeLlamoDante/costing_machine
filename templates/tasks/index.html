@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}tasks{% endblock title %}
+{% block content %}
+<div class="row text-center">
+    <div class="col">
+        <h1>Tareas</h1>
+        <ul class="list-group text-start">
+            {% for task in tasks %}
+                <li class="list-group-item list-group-item-action list-group-item{% if task.categories == 'mantenimiento'  %}-warning {% elif task.categories == 'reparacion' %}-danger{% endif %}">{{task.task_name}}</li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+{% endblock content %}

@@ -26,6 +26,7 @@ urlpatterns = [path("", under_construction, name="under_construction")]
 if settings.DEBUG:
     urlpatterns = [
         path("plants/", include("plants.urls")),
+        path("tasks/", include("tasks.urls")),
         path("admin/", admin.site.urls),
     ]
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
